@@ -1,42 +1,37 @@
-# E-Commerce React Frontend
+# Botanepal – Plant E-commerce Website 🌿
 
-## Project Overview
+## Overview
 
-This project is a **frontend-only e-commerce web application** built with **React**, **Tailwind CSS**, and **React Router**. It features a clean, responsive UI designed for an engaging shopping experience focused on plant products. The app includes:
-
-- Product browsing with category and type filters
-- Search functionality with navigation to collection page
-- Responsive navigation bar and footer
-- Shopping cart with add, update, and remove item capabilities
-- State management using React Context API
-- Styling with Tailwind CSS for rapid UI development
-- Accessibility and responsive design best practices
-
-This project is ideal for learning React component architecture, state management, and styling with Tailwind CSS in a real-world context.
+**Botanepal** is a **frontend-only plant e-commerce web application** built with **React**, **Tailwind CSS**, and **React Router**. It features a clean, responsive UI designed to showcase and shop for plant products, simulating real-world e-commerce functionality.
 
 ---
 
-## Features
+## 🔑 Key Features
 
-- **Product Collection**: Filter by category, type, and search terms.
-- **Search Bar**: Redirects to collection page and filters products dynamically.
-- **Shopping Cart**: Add products with size selection, update quantities, remove items.
-- **Responsive Design**: Mobile-friendly layout with sidebar menu.
-- **Reusable Components**: Navbar, Footer, ProductItem, SearchBar, etc.
-- **Context API**: Centralized state management for cart, search, and UI toggles.
+- 🪴 **Product Collection**: Browse and filter plants by category and type.
+- 🔍 **Search Functionality**: Search bar redirects to the collection page and filters products in real time.
+- 🛒 **Shopping Cart**: Add to cart with size selection, update quantity, and remove items.
+- 🧾 **Order Placement**: Place an order with shipping address and selected items.
+- 📃 **My Orders Page**: View dynamically updated list of previously placed orders.
+- 📱 **Responsive Design**: Mobile-friendly layout with adaptive sidebar menu.
+- ⚙️ **Mock API with JSON Server**: Simulates backend API for product and order data.
+- 🎨 **Tailwind CSS**: Rapid UI development and customization.
+- 🧠 **State Management**: Uses **React Context API** for cart, search, and UI state.
+- 🧩 **Reusable Components**: Navbar, ProductItem, Footer, SearchBar, etc.
+
+---
+
+## 🧰 Tech Stack
+
+- **React** (v18+)
+- **React Router DOM** (v6+)
+- **Tailwind CSS**
+- **React Context API**
+- **JSON Server** (for mock API)
+- **React Toastify**
 
 ---
 
-## Tech Stack
-
-- React (v18+)
-- React Router (v6+)
-- Tailwind CSS
-- React Context API
-- React Toastify (for notifications)
-- JavaScript (ES6+)
-
----
 
 ## Getting Started
 
@@ -50,51 +45,27 @@ This project is ideal for learning React component architecture, state managemen
 1. **Clone the repository**
 
 git clone https://github.com/sjoshiii/Botanepal.git
-cd your-repo-name
+cd Frontend
 
 2. **Install dependencies**
 
 Using npm:
 npm install
 
-Or using yarn:
-yarn install
 
-3. **Start the development server**
+3. **Start JSON Server (Mock API)**
 
-npm start
+json-server --watch db.json --port 5000
 
-or
+**Make sure you have JSON Server installed globally. If not, install it via:**
+npm install -g json-server
 
-yarn start
+
+4. **Start the development server**
+
+npm run dev
 
 This will launch the app in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
-
----
-
-## Project Structure
-
-src/
-├── assets/ # Images, icons, and static assets
-├── components/ # Reusable React components (Navbar, SearchBar, ProductItem, etc.)
-├── context/ # React Context for state management (ShopContext)
-├── pages/ # Page components (Home, Collection, About, Contact, Cart)
-├── App.js # Main app component with routing
-├── index.css # Tailwind CSS configuration and custom styles
-├── main.jsx # React app entry point (renders App.js)
-
----
-
-## Available Scripts
-
-- `npm start` or `yarn start`  
-  Starts the development server.
-
-- `npm run build` or `yarn build`  
-  Builds the app for production to the `build` folder.
-
-- `npm test` or `yarn test`  
-  Launches the test runner (if tests are implemented).
 
 ---
 
